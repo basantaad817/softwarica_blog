@@ -3,38 +3,14 @@ body {
   background-image: linear-gradient(
     to bottom right,
     skyblue,
-    rgb(109, 196, 152));
+    rgb(109, 196, 152)
+  );
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   color: #3c4222;
   line-height: 1.5;
 }
-.article {
-    background-color: #ffffff40;
-    border: 1px solid #ffffff66;
-    border-radius: 30px;
-    margin: 35px 55px;
-    padding: 50px;
-    text-align: justify;
-  }
-  h4{
-      margin-bottom: -3px;
-  }
-.column{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-}
-.column img{
-    width: 45%;
-    height: 400px;
-  border-radius: 20px;
-
-}
-.column p{
-    width: 45%;
-}
+/* icons */
 .icons {
   position: fixed;
   right: -17.6rem;
@@ -74,12 +50,36 @@ body {
 .fa-telegram {
   color: #3eb6f1;
 }
-
+.article {
+  background-color: #ffffff40;
+  border: 1px solid #ffffff66;
+  border-radius: 30px;
+  margin: 35px 55px;
+  padding: 50px;
+  text-align: justify;
+}
 h3 {
   font-weight: 1000;
   font-size: 30px;
   text-align: center;
   color: black;
+}
+h4 {
+  margin-bottom: -3px;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.column img {
+  width: 45%;
+  height: 400px;
+  border-radius: 20px;
+}
+.column p {
+  width: 45%;
 }
 .date ul {
   list-style: none;
@@ -88,3 +88,12 @@ h3 {
 li span {
   color: #9b1c71;
 }
+@media (max-width: 1150px) {
+    .column{
+        flex-wrap: wrap;
+    }
+    .column img,.column p{
+        width: 100%;
+        height: auto;
+    }
+  }
