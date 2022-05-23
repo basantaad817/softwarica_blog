@@ -89,6 +89,10 @@ li span {
   color: #9b1c71;
 }
 @media (max-width: 1150px) {
+    .article{
+        margin: 10px;
+        padding: 20px;
+    }
     .column{
         flex-wrap: wrap;
     }
